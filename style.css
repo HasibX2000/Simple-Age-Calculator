@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 13rem;
+  background: hsla(232, 73%, 65%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(232, 73%, 65%, 1) 0%,
+    hsla(336, 63%, 51%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(232, 73%, 65%, 1) 0%,
+    hsla(336, 63%, 51%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(232, 73%, 65%, 1) 0%,
+    hsla(336, 63%, 51%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6274E7", endColorstr="#D13372", GradientType=1 );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.calc-area {
+  background: #ffffff59;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#datePicker {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Titillium Web';
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+#datePicker:focus-visible {
+  outline: 0;
+}
+
+#datePicker::-webkit-calendar-picker-indicator {
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.calc-area .calc-button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #ffc312;
+  cursor: pointer;
+}
+
+#result {
+  color: #ffffff;
+  transition: all ease 1s;
+}
+#result span {
+  color: #ffc312;
+}
