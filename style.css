@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  overflow: hidden;
+  font-size: 10px;
+}
 body {
   font-family: 'Titillium Web', sans-serif;
   margin-top: 13rem;
@@ -34,42 +38,46 @@ body {
   align-items: center;
 }
 .container .title {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+.container .image {
+  width: 100%;
+  max-width: 8rem;
 }
 
 .calc-area {
   background: #ffffff59;
-  padding: 20px;
+  padding: 2rem;
   width: fit-content;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 #datePicker {
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
   font-family: 'Titillium Web';
   border: none;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 #datePicker:focus-visible {
   outline: 0;
 }
 
 #datePicker::-webkit-calendar-picker-indicator {
-  font-size: 20px;
+  font-size: 2rem;
   margin-left: 80px;
 }
 
 .calc-area .calc-button {
-  padding: 15px 20px;
-  font-size: 20px;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
   border: none;
   border-radius: 5px;
   background: #ffc312;
@@ -82,4 +90,24 @@ body {
 }
 #result span {
   color: #ffc312;
+}
+#result h3 {
+  font-size: 2rem;
+}
+
+/* Responsive Query  */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+
+  .calc-area {
+    flex-direction: column;
+  }
+
+  #datePicker,
+  .calc-button {
+    width: 100%;
+    margin: 5px;
+  }
 }
